@@ -1,0 +1,28 @@
+# API keys
+.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Vector database
+.chroma/
+
+# Documents
+docs/
+
+# Embedding model cache
+.cache/
+sentence_transformers/
+
+# IDE
+.idea/
+.vscode/
+
+# Mac
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
