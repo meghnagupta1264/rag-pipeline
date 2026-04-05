@@ -174,10 +174,9 @@ Single-turn only — each query is independent. The pipeline doesn't maintain co
 ## Experiments worth running
 
 1. Change chunk size — delete `.chroma/` and re-index with `chunk_size=200`. Ask the same questions. Smaller chunks are more precise but lose surrounding context. Larger chunks keep context but retrieve noisier results.
-
 <img width="2788" height="1194" alt="Pasted Graphic" src="https://github.com/user-attachments/assets/fe929fe8-fe97-46e0-ac25-0709a0380c11" />
 <img width="2784" height="1176" alt="Pasted Graphic 1" src="https://github.com/user-attachments/assets/b7f7c3de-6036-490e-b971-c8569987462f" />
 
 2. Multi-document retrieval — add two or three different PDFs to `docs/`. Ask questions that span both. Watch the retriever pull chunks from multiple sources and the LLM synthesize across them.
-
-3. Top-k tuning — change `top_k=5` to `top_k=2` for faster, more focused answers. Change to `top_k=10` for richer context. Notice where each setting breaks down.
+<img width="2788" height="1222" alt="image" src="https://github.com/user-attachments/assets/4c878734-1536-492d-a9c3-16fc01d62122" />
+<img width="2786" height="1238" alt="image" src="https://github.com/user-attachments/assets/282be3f5-2124-47c5-acea-dc176b3deaf0" />
